@@ -5,6 +5,8 @@ description: Turns screen recordings of a mobile app into individual screenshots
 
 # Screen recordings into screens
 
+Version 1.0.0 — see `CHANGELOG.md` for what changed.
+
 ## Input and output
 
 An exam folder is any folder with an `assets/` directory of recordings inside it.

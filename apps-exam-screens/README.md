@@ -8,14 +8,29 @@ everything out with an index that points back to the source timecode.
 Built for UX teardowns, where the raw material is a ten-minute screen recording
 and what you actually need is forty labelled screens.
 
+**Version 1.0.0** · [Changelog](CHANGELOG.md) ·
+[Releases](https://github.com/pavel-module/module-claude-skills/releases?q=apps-exam-screens)
+
 ## Install
 
-Copy the `apps-exam-screens` folder into either:
+Clone the repository and symlink this skill into your Claude Code skills folder:
 
-- `~/.claude/skills/` — available in every project;
-- `<project>/.claude/skills/` — that project only.
+```bash
+git clone https://github.com/pavel-module/module-claude-skills.git
+ln -s "$PWD/module-claude-skills/apps-exam-screens" ~/.claude/skills/apps-exam-screens
+```
 
-Claude Code picks the skill up on the next session.
+`~/.claude/skills/` makes it available in every project; `<project>/.claude/skills/`
+scopes it to one. Claude Code picks the skill up on the next session.
+
+A symlink keeps one copy on the machine, so `git pull` updates every project at
+once. To stay on a specific version, check out its tag in the clone:
+
+```bash
+git checkout apps-exam-screens-v1.0.0
+```
+
+Copying the folder instead of symlinking works too, but copies drift.
 
 ## Requirements
 
